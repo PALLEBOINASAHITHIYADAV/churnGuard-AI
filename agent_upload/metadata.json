@@ -1,0 +1,11 @@
+{
+  "name": "ChurnGuard AI - Early Warning System",
+  "version": "1.0.0",
+  "description": "Multi-agent AI system for customer churn prediction with automated email alerts",
+  "author": "BLACKBOXAI",
+  "license": "MIT",
+  "tags": ["machine-learning", "customer-churn", "predictive-analytics", "email-alerts"],
+  "framework": "streamlit",
+  "language": "python",
+  "dependencies": ["streamlit", "pandas", "scikit-learn", "matplotlib", "smtplib"]
+}

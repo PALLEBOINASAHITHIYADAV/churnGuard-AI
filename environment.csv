@@ -1,0 +1,9 @@
+Key,Name,Value
+SMTP_SERVER,SMTP Server,smtp.gmail.com
+SMTP_PORT,SMTP Port,587
+DEFAULT_RECIPIENT,Default Recipient Email,sahithisuresh14@gmail.com
+MODEL_ACCURACY_THRESHOLD,Model Accuracy Threshold,0.8
+TOP_RISK_COUNT,Top Risk Customer Count,5
+EMAIL_SUBJECT_TEMPLATE,Email Subject Template,High Churn Risk Alert for Customer {customer_id}
+API_BASE_URL,API Base URL,https://api.churn-guard.com
+LOG_LEVEL,Logging Level,INFO

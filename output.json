@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "model_accuracy": {
+      "type": "number",
+      "description": "Accuracy score of the trained churn prediction model"
+    },
+    "at_risk_customers": {
+      "type": "array",
+      "description": "List of customers at high risk of churning",
+      "items": {
+        "type": "object",
+        "properties": {
+          "customer_id": {
+            "type": "string",
+            "description": "Unique customer identifier"
+          },
+          "churn_probability": {
+            "type": "number",
+            "description": "Predicted probability of customer churning"
+          },
+          "tenure": {
+            "type": "number",
+            "description": "Customer tenure in months"
+          },
+          "monthly_charges": {
+            "type": "number",
+            "description": "Monthly charges for the customer"
+          },
+          "total_charges": {
+            "type": "number",
+            "description": "Total charges accumulated"
+          },
+          "risk_factors": {
+            "type": "array",
+            "description": "Key factors contributing to churn risk",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "email_alerts_sent": {
+      "type": "integer",
+      "description": "Number of email alerts successfully sent"
+    },
+    "churn_distribution": {
+      "type": "object",
+      "description": "Overall churn distribution in the dataset",
+      "properties": {
+        "no_churn": {
+          "type": "integer",
+          "description": "Number of customers not churning"
+        },
+        "churn": {
+          "type": "integer",
+          "description": "Number of customers churning"
+        }
+      }
+    },
+    "simulated_alerts": {
+      "type": "array",
+      "description": "Simulated email alert content for preview",
+      "items": {
+        "type": "string",
+        "description": "Email alert message content"
+      }
+    }
+  },
+  "required": ["model_accuracy", "at_risk_customers"]
+}

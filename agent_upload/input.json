@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "customer_data": {
+      "type": "string",
+      "description": "Path to CSV file containing customer data",
+      "format": "file"
+    },
+    "smtp_server": {
+      "type": "string",
+      "description": "SMTP server for email alerts (e.g., smtp.gmail.com)",
+      "default": "smtp.gmail.com"
+    },
+    "smtp_port": {
+      "type": "integer",
+      "description": "SMTP port number",
+      "default": 587
+    },
+    "smtp_username": {
+      "type": "string",
+      "description": "Email username for sending alerts"
+    },
+    "smtp_password": {
+      "type": "string",
+      "description": "Email password or app password for sending alerts"
+    },
+    "recipient_email": {
+      "type": "string",
+      "description": "Email address to receive churn alerts"
+    },
+    "top_n": {
+      "type": "integer",
+      "description": "Number of top at-risk customers to identify",
+      "default": 5
+    }
+  },
+  "required": ["customer_data"]
+}

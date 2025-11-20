@@ -1,0 +1,6 @@
+Display Name,Method,URL Template
+Predict Churn,POST,https://api.churn-guard.com/predict
+Get Customer Data,GET,https://api.churn-guard.com/customers/{customer_id}
+Send Alert Email,POST,https://api.churn-guard.com/alerts/send
+Update Customer Status,PUT,https://api.churn-guard.com/customers/{customer_id}/status
+Delete Customer Record,DELETE,https://api.churn-guard.com/customers/{customer_id}
