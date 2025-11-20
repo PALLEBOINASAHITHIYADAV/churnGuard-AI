@@ -55,4 +55,4 @@ streamlit run app.py
 MIT License
 
 ## Author
-BLACKBOXAI
+Sahithi Palleboina
